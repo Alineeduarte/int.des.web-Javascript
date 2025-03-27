@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade06 -  Javascript</title>
+</head>
+<body>
+    <script>
+
+    //8. Saudação personalizada.
+    nome = prompt ("Qual é o seu nome?");
+    document.write ("Olá, " + nome + "! Seja bem vindo(a) ao meu site! <br><br>");
+
+    //9. Conversão de temperatura
+    let celsius = Number (prompt ("Digite a temperatura em Celsius: ") );
+    let fahrenheit;
+    fahrenheit = (celsius * 1.8) + 32;
+    document.write (`${celsius} graus Celsius é igual a ${fahrenheit} graus Fahrenheit <br><br>`);
+
+    //10. Calculadora simples
+    let nr1 = Number (prompt ("Digite o primeiro número") );
+    let nr2 = Number (prompt ("Digite o segundo número") );
+    document.write (`A soma de ${nr1} + ${nr2} = ${nr1 + nr2} <br>`);
+    document.write (`A subtração de ${nr1} - ${nr2} = ${nr1 - nr2} <br>`);
+    document.write (`A multiplicação de ${nr1} * ${nr2} = ${nr1 * nr2} <br>`);
+    document.write (`A divisão de ${nr1} / ${nr2} = ${nr1 / nr2} <br>`);
+
+    //11. Verificação de maioridade
+    let idade = Number (prompt ("Digite a sua idade: ") );
+    if (idade >= 18) {
+        document.write ("Você é maior de idade! <br><br>");
+    } else {
+        document.write ("Você é menor de idade! <br><br>");
+    }
+
+    //12. Cálculo de desconto
+    let valor = Number (prompt ("Digite o valor do produto: ") );
+    let desconto = Number (prompt ("Digite o valor do desconto: ") );
+    let valorFinal;
+    valorFinal = valor - desconto;
+    document.write (`O valor final do produto com desconto é de R$ ${valorFinal.toFixed(2)} <br><br>`);
+
+    //13. Conversão de moedas
+    let dolar = Number (prompt ("Digite o valor em dólar: ") );
+    let cotacao = 5.00;
+    let real;
+    real = dolar * cotacao;
+    document.write (`O valor de $ ${dolar} em reais é de R$ ${real.toFixed(2)} <br><br>`);
+
+    </script>
+</body>
+</html>
